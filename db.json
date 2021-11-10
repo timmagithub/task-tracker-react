@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "1",
+      "day": "November 29, 2021 at 3:30pm",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "2",
+      "day": "January 1, 2022 at 8:00am",
+      "reminder": false
+    },
+    {
+      "text": "Eat Pussy",
+      "day": "Friday @ 9pm",
+      "reminder": false,
+      "id": 3
+    },
+    {
+      "text": "apples",
+      "day": "",
+      "reminder": true,
+      "id": 4
+    }
+  ]
+}
