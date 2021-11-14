@@ -87,6 +87,17 @@ const App = () => {
     );
   };
 
+  const renderHome = (props) => (
+    <>
+      {showAddTask && <AddTask onAdd={addTask} />}
+      {tasks.length > 0 ? (
+        <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
+      ) : (
+        "No Tasks To Show"
+      )}
+    </>
+  );
+
   return (
     <Router>
       <div className="container">
@@ -95,25 +106,8 @@ const App = () => {
           showAdd={showAddTask}
         />
         <Routes>
-          <Route
-            path="/"
-            exact
-            element={(props) => (
-              <>
-                {showAddTask && <AddTask onAdd={addTask} />}
-                {tasks.length > 0 ? (
-                  <Tasks
-                    tasks={tasks}
-                    onDelete={deleteTask}
-                    onToggle={toggleReminder}
-                  />
-                ) : (
-                  "No Tasks To Show"
-                )}
-              </>
-            )}
-          />
-          <Route path="/about" element={<About />} />
+          <Route path="/" exact element={renderHome()} />
+          <Route path="/about" exact element={<About />} />
         </Routes>
         <Footer />
       </div>
