@@ -13,16 +13,16 @@
       "reminder": false
     },
     {
-      "text": "Eat Pussy",
-      "day": "Friday @ 9pm",
-      "reminder": false,
-      "id": 3
-    },
-    {
       "text": "apples",
       "day": "",
       "reminder": true,
       "id": 4
+    },
+    {
+      "text": "tell time",
+      "day": "tomorrow at 2pm",
+      "reminder": true,
+      "id": 5
     }
   ]
 }
